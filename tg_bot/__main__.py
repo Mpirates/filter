@@ -53,7 +53,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/Theprofeser) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; Google pay."""
+There are two ways of paying him; Google pay number- 7510207563."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -384,7 +384,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1158680997 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
