@@ -71,7 +71,7 @@ def __gdpr__(user_id):
     sql.rm_afk(user_id)
 
 
-__help__ = """
+__GMC__ = """
  - /afk <reason>: mark yourself as AFK.
  - brb <reason>: same as the afk command - but not a command.
 
