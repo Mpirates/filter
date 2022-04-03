@@ -163,8 +163,9 @@ def filters(bot: Bot, update: Update):
         has_caption = True
 
     elif msg.reply_to_message and msg.reply_to_message.text:
+        button_markdown_parser(msg.reply_to_message.caption
         content = msg.reply_to_message.text
-
+        
     elif not content:
         # msg.reply_text("You didn't specify what to reply with!")
         msg.reply_text("There is no note message - You can't JUST have buttons, you need a message to go with it!")
@@ -244,14 +245,6 @@ def reply_filter(bot: Bot, update: Update):
             if filt.is_sticker:
                 message.reply_sticker(
                     filt.reply,
-                    reply_markup=keyboard,
-                    api_kwargs={"allow_sending_without_reply": True}
-                )
-            elif filt.is_text:
-                message.reply_text(
-                    filt.reply,
-                    caption=media_caption,
-                    parse_mode=ParseMode.MARKDOWN,
                     reply_markup=keyboard,
                     api_kwargs={"allow_sending_without_reply": True}
                 )
