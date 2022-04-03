@@ -37,8 +37,8 @@ Can be used by admins only:
 DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+(see his bio!). He's just a poor student, so every little helps!, You need to donate him.
+[Click me](https://t.me/The_user_death)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
