@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hi PROFESSOR ❤, I'm a filter bot used for adding unlimited custom filter messages in groups. Join @KeralaBots to find how to add me in your group.
+Hi PROFESSOR ❤, I'm a filter bot used for adding unlimited custom filter messages in groups. †ʜɪꜱ ʙᴏᴛ ɪꜱ ᴄʀᴇᴀᴛᴇᴅ ʙy [ᴩʀᴏꜰᴇꜱᴇʀ](https://t.me/The_user_death).
 ലഭ്യമായ കമാന്റുകളെപ്പറ്റി അറിയുവാൻ /help അമർത്തുക.
 
 """
