@@ -392,7 +392,7 @@ def __chat_settings__(chat_id, user_id):
            "before the user gets *{}*.".format(num_warn_filters, limit, "kicked" if soft_warn else "banned")
 
 
-__help__ = """
+__GMC__ = """
  - /warns <userhandle>: get a user's number, and reason, of warnings.
  - /warnlist: list of all current warning filters
 
