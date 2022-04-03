@@ -467,7 +467,7 @@ def runban(bot: Bot, update: Update, args: List[str]):
             message.reply_text("Well damn, I can't unban that user.")
 
 
-__help__ = """
+__GMC__ = """
  - /kickme: kicks the user who issued the command
 
 *Admin only:*
