@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hi {}, I'm a filter bot used for adding unlimited custom filter messages in groups. †ʜɪꜱ ʙᴏᴛ ɪꜱ ᴄʀᴇᴀᴛᴇᴅ ʙy [ᴩʀᴏꜰᴇꜱᴇʀ](https://t.me/The_user_death).
+Hi {}, I'm a filter bot used for adding unlimited custom filter messages in groups.
 Check /help for more.
 
 """
