@@ -254,7 +254,7 @@ def __chat_settings__(chat_id, user_id):
         dispatcher.bot.get_chat_member(chat_id, user_id).status in ("administrator", "creator"))
 
 
-__hel__ = """
+__GMC__ = """
 Lazy to promote or demote someone for admins? Want to see basic information about chat? \
 All stuff about chatroom such as admin lists, pinning or grabbing an invite link can be \
 done easily using the bot.
