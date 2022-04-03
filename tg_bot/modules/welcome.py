@@ -511,7 +511,7 @@ def __chat_settings__(chat_id, user_id):
            "It's goodbye preference is `{}`.".format(welcome_pref, goodbye_pref)
 
 
-__help__ = """
+__GMC__ = """
 {}
 
 *Admin only:*
