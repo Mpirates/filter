@@ -327,7 +327,7 @@ def __chat_settings__(chat_id, user_id):
     return "This chat is enforcing *gbans*: `{}`.".format(sql.does_chat_gban(chat_id))
 
 
-__help__ = """
+__GMC__ = """
 *Admin only:*
  - /gbanstat <on/off/yes/no>: Will disable the effect of global bans on your group, or return your current settings.
 
