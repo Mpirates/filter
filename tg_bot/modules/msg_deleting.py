@@ -86,7 +86,7 @@ def del_message(bot: Bot, update: Update) -> str:
     return ""
 
 
-__help__ = """
+__GMC__ = """
 *Admin only:*
  - /del: deletes the message you replied to
  - /purge: deletes all messages between this and the replied to message.
