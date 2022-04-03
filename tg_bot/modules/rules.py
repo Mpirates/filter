@@ -93,7 +93,7 @@ def __chat_settings__(chat_id, user_id):
     return "This chat has had it's rules set: `{}`".format(bool(sql.get_rules(chat_id)))
 
 
-__help__ = """
+__GMC__ = """
  - /rules: get the rules for this chat.
 
 *Admin only:*
