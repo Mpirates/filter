@@ -164,7 +164,6 @@ def filters(bot: Bot, update: Update):
 
     elif msg.reply_to_message and msg.reply_to_message.text:
         content = msg.reply_to_message.text
-        buttons = button_markdown_parser(msg.reply_to_message
         
     elif not content:
         # msg.reply_text("You didn't specify what to reply with!")
