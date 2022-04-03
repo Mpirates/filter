@@ -247,6 +247,14 @@ def reply_filter(bot: Bot, update: Update):
                     reply_markup=keyboard,
                     api_kwargs={"allow_sending_without_reply": True}
                 )
+            elif filt.is_text:
+                message.reply_text(
+                    filt.reply,
+                    caption=media_caption,
+                    parse_mode=ParseMode.MARKDOWN,
+                    reply_markup=keyboard,
+                    api_kwargs={"allow_sending_without_reply": True}
+                )
             elif filt.is_document:
                 message.reply_document(
                     filt.reply,
