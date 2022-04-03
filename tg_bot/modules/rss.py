@@ -215,7 +215,7 @@ def rss_set(bot, job):
             pass
 
 
-__help__ = """
+__GMC__ = """
  - /addrss <link>: add an RSS link to the subscriptions.
  - /removerss <link>: removes the RSS link from the subscriptions.
  - /rss <link>: shows the link's data and the last entry, for testing purposes.
