@@ -122,7 +122,7 @@ def __user_settings__(user_id):
 
 __mod_name__ = "Reporting"
 
-__help__ = """
+__GMC__ = """
  - /report <reason>: reply to a message to report it to admins.
  - @admin: reply to a message to report it to admins.
 NOTE: neither of these will get triggered if used by admins
