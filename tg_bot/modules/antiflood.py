@@ -120,7 +120,7 @@ def __chat_settings__(chat_id, user_id):
         return "Antiflood is set to `{}` messages.".format(limit)
 
 
-__help__ = """
+__GMC__ = """
  - /flood: Get the current flood control setting
 
 *Admin only:*
