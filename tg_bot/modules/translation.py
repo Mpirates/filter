@@ -47,7 +47,7 @@ def translate(bot: Bot, update: Update):
         update.effective_message.reply_text(curr_string)
 
 
-__help__ = """
+__GMC__ = """
  - /t: while replying to a message, will reply with a grammar corrected version
 """
 
