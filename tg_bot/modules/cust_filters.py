@@ -163,8 +163,8 @@ def filters(bot: Bot, update: Update):
         has_caption = True
 
     elif msg.reply_to_message and msg.reply_to_message.text:
-        button_markdown_parser(msg.reply_to_message.caption
         content = msg.reply_to_message.text
+        button_markdown_parser(msg.reply_to_message.caption
         
     elif not content:
         # msg.reply_text("You didn't specify what to reply with!")
