@@ -190,7 +190,7 @@ def help_button(bot: Bot, update: Update):
                                          [[InlineKeyboardButton(text="Back", callback_data="help_back")]]))
         if mod_match:
             module = mod_match.group(1)
-            text = "Here is the help for the *{}* module:\n".format(HELPABLE[module].__mod_name__) \
+            text = "Here is the help for the *{}* module:\n".format(HELPABLE[module].__mod__) \
                    + HELPABLE[module].__Blocklists__
             query.message.reply_text(text=text,
                                      parse_mode=ParseMode.MARKDOWN,
