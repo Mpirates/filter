@@ -142,7 +142,7 @@ if is_module_loaded(FILENAME):
         return "No log channel is set for this group!"
 
 
-    __GMC__ = """
+    __help__ = """
 *Admin only:*
 - /logchannel: get log channel info
 - /setlog: set the log channel.
