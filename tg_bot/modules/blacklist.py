@@ -144,23 +144,46 @@ def __stats__():
                                                             sql.num_blacklist_filter_chats())
 
 
-__mod_name__ = "Word Blacklists"
+__mod_name__ = "Blocklists"
 
-__GMC__ = """
-Blacklists are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, \
-the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!
+__help__ = """
+Want to stop people asking stupid questions? or ban anyone saying censored words? Blocklists is the module for you!
 
-*NOTE:* blacklists do not affect group admins.
+From blocking rude words, filenames/extensions, to specific emoji, everything is possible.
 
- - /blacklist: View the current blacklisted words.
-
-*Admin only:*
+*Admin commands:*
  - /addblacklist <triggers>: Add a trigger to the blacklist. Each line is considered one trigger, so using different \
 lines will allow you to add multiple triggers.
  - /unblacklist <triggers>: Remove triggers from the blacklist. Same newline logic applies here, so you can remove \
 multiple triggers at once.
  - /rmblacklist <triggers>: Same as above.
+ - /blacklist: View the current blacklisted words.
+
+Top tip:
+Blocklists allow you to use some modifiers to match "unknown" characters. For example, you can use the ? character to match a single occurrence of any non-whitespace character.
+You could also use the * modifier, which matches any number of any character. If you want to blocklist urls, this will allow you to match the full thing. It matches every character except spaces. This is cool if you want to block, for example, url shorteners.
 """
+
+__mod_name__ = "blocklist commands examples"
+
+__Blocklists__ = """
+*Example blocklist commands:*
+- Automatically warn users who say blocklisted words.
+-> /blocklistmode warn
+- Override the blocklist mode for a single filter. Users that says 'boo' will get a muted for 6 hours, instead of the blocklist action.
+-> /addblocklist boo Don't scare the ghosts! {tmute 6h}
+- Add a full sentence to the blocklist. This would delete any message containing 'the admins suck'.
+-> /addblocklist "the admins suck" Respect your admins!
+- Stop any bit.ly links using the * shortcut to match any character.
+-> /addblocklist "bit.ly/*" We dont like shorteners!
+- Stop any bit.ly links followed by exactly three characters, to catch bit.ly/hey, but not bit.ly/abcd.
+-> /addblocklist "bit.ly/???" We dont like 3 letter shorteners!
+- Stop people sending zip files, by blocklisting *.zip
+-> /addblocklist "*.zip" zip files are not allowed here.
+- Stop any 🖕 emoji, or any stickers related to it.
+-> /addblocklist 🖕 This emoji is not allowed here.
+
+
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler("blacklist", blacklist, filters=Filters.group, pass_args=True,
                                               admin_ok=True)
