@@ -20,6 +20,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 
 Hi {}, My name is jessy - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
+Join my [news channel](https://t.me/FPHDMOVE) to get all the latest move updates.
 
 """
 
