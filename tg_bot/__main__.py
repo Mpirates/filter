@@ -19,19 +19,21 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hi {}, I'm a filter bot used for adding unlimited custom filter messages in groups.
-Check /help for more.
+Hi {}, My name is jessy - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
 """
 
 HELP_STRINGS = """
-How to use this bot:
+Hey! My name is jessy. I am a group management bot, here to help you get around and keep the order in your groups!
+I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
 
- - /filters: list all active filters in this chat.
+Helpful commands:
+- /start: Starts me! You've probably already used this.
+- /help: Sends this message; I'll tell you more about myself!
+- /donate: Gives you info on how to support me and my creator.
 
-Can be used by admins only:
- - /filter <keyword> <reply message>: add a filter to this chat. If you want your keyword to be a sentence, use quotes. eg: /filter "hi bro" Hey buddy!
- - /stop <filter keyword>: stop that filter.
+If you have any bugs or questions on how to use me, have a look at my [GROUP](https://t.me/botdouth), or contact the owner - @sangeeth006.
+ All commands can be used with the following: / !
 """
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -135,9 +137,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username))],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/FILIMPIRATESGROUP"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/FPHDMOVE")],
-                     [InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="➕️ Add me to your group ➕️", url="t.me/{}?startgroup=true".format(bot.username)) ]]))
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
 
