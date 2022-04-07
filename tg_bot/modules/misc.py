@@ -415,7 +415,7 @@ def getsticker(bot: Bot, update: Update):
                                             parse_mode=ParseMode.MARKDOWN)
 
 # /ip is for private use
-__GMC__ = """
+__help__ = """
  - /id: get the current group id. If used by replying to a message, gets that user's id.
  - /runs: reply a random string from an array of replies.
  - /slap: slap a user, or get slapped if not a reply.
@@ -427,7 +427,7 @@ __GMC__ = """
  - /getsticker: reply to a sticker and get that sticker as .png and image. 
 """
 
-__mod_name__ = "Misc"
+__mod_nam__ = "Misc"
 
 ID_HANDLER = DisableAbleCommandHandler("id", get_id, pass_args=True)
 IP_HANDLER = CommandHandler("ip", get_bot_ip, filters=Filters.chat(OWNER_ID))
