@@ -254,17 +254,13 @@ def __chat_settings__(chat_id, user_id):
         dispatcher.bot.get_chat_member(chat_id, user_id).status in ("administrator", "creator"))
 
 
-__GMC__ = """
-Lazy to promote or demote someone for admins? Want to see basic information about chat? \
-All stuff about chatroom such as admin lists, pinning or grabbing an invite link can be \
-done easily using the bot.
-
+__help__ = """
+Make it easy to promote and demote users with the admin module!
+*Admin commands:*
  - /adminlist: list of admins and members in the chat
  - /staff: same as /adminlist
  - /link: get the group link for this chat.
  - #link: same as /link
-
-*Admin only:*
  - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifies to users.
  - /unpin: unpins the currently pinned message.
  - /invitelink: generates new invite link.
@@ -273,14 +269,11 @@ done easily using the bot.
  - /promote: promotes the user replied to
  - /demote: demotes the user replied to
  
- An example of set a link:
-`/setlink https://t.me/joinchat/HwiIk1RADK5gRMr9FBdOrwtae`
-
-An example of promoting someone to admins:
-`/promote @username`; this promotes a user to admins.
+Sometimes, you promote or demote an admin manually, and jessy doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally.
+This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the /adminlist command; that'll force jessy to check who the admins are again.
 """
 
-__mod_name__ = "Admin❤"
+__mod_name__ = "Admin"
 
 PIN_HANDLER = CommandHandler("pin", pin, pass_args=True, filters=Filters.group)
 UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.group)
