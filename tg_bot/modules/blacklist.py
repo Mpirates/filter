@@ -144,7 +144,7 @@ def __stats__():
                                                             sql.num_blacklist_filter_chats())
 
 
-__mod_name__ = "blocklists"
+__mod_name__ = "world blacklists"
 
 __help__ = """
 Want to stop people asking stupid questions? or ban anyone saying censored words? Blocklists is the module for you!
