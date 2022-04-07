@@ -164,7 +164,7 @@ Blocklists allow you to use some modifiers to match "unknown" characters. For ex
 You could also use the * modifier, which matches any number of any character. If you want to blocklist urls, this will allow you to match the full thing. It matches every character except spaces. This is cool if you want to block, for example, url shorteners.
 """
 
-__mod_name__ = "blocklist commands examples"
+__mod__ = "blocklist commands examples"
 
 __Blocklists__ = """
 *Example blocklist commands:*
