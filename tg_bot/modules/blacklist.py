@@ -144,9 +144,9 @@ def __stats__():
                                                             sql.num_blacklist_filter_chats())
 
 
-__mod_nam__ = "blocklists"
+__mod_name__ = "blocklists"
 
-__hel__ = """
+__help__ = """
 Want to stop people asking stupid questions? or ban anyone saying censored words? Blocklists is the module for you!
 
 From blocking rude words, filenames/extensions, to specific emoji, everything is possible.
@@ -158,6 +158,10 @@ lines will allow you to add multiple triggers.
 multiple triggers at once.
  - /rmblacklist <triggers>: Same as above.
  - /blacklist: View the current blacklisted words.
+
+Top tip:
+Blocklists allow you to use some modifiers to match "unknown" characters. For example, you can use the ? character to match a single occurrence of any non-whitespace character.
+You could also use the * modifier, which matches any number of any character. If you want to blocklist urls, this will allow you to match the full thing. It matches every character except spaces. This is cool if you want to block, for example, url shorteners.
 """
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler("blacklist", blacklist, filters=Filters.group, pass_args=True,
