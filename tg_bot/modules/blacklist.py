@@ -182,6 +182,7 @@ __Blocklists__ = """
 -> /addblocklist "*.zip" zip files are not allowed here.
 - Stop any 🖕 emoji, or any stickers related to it.
 -> /addblocklist 🖕 This emoji is not allowed here.
+"""
 
 
 
