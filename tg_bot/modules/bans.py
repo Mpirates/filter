@@ -467,14 +467,32 @@ def runban(bot: Bot, update: Update, args: List[str]):
             message.reply_text("Well damn, I can't unban that user.")
 
 
-__GMC__ = """
- - /kickme: kicks the user who issued the command
+__help__ = """
+Some people need to be publicly banned; spammers, annoyances, or just trolls.
 
-*Admin only:*
- - /ban <userhandle>: bans a user. (via handle, or reply)
- - /tban <userhandle> x(m/h/d): bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
- - /unban <userhandle>: unbans a user. (via handle, or reply)
- - /kick <userhandle>: kicks a user, (via handle, or reply)
+This module allows you to do that easily, by exposing some common actions, so everyone will see!
+
+*User commands:*
+- /kickme: kicks the user who issued the command
+
+*Admin commands:*
+- /ban: Ban a user.
+- /dban: Ban a user by reply, and delete their message.
+- /sban: Silently ban a user, and delete your message.
+- /tban: Temporarily ban a user. Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks.
+- /unban: Unban a user.
+- /mute: Mute a user.
+- /dmute: Mute a user by reply, and delete their message.
+- /smute: Silently mute a user, and delete your message.
+- /tmute: Temporarily mute a user. Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks.
+- /unmute: Unmute a user.
+- /kick: Kick a user.
+- /dkick: Kick a user by reply, and delete their message.
+- /skick: Silently kick a user, and delete your message
+
+*Examples:*
+- Mute a user for two hours.
+-> /tmute @username 2h
 """
 
 __mod_name__ = "Bans"
