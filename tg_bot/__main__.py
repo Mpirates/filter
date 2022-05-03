@@ -18,23 +18,16 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-
-Hi {}, My name is Mr.Pirate - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
-Join my [news channel](https://t.me/FPHDMOVE) to get all the latest move updates.
-
+Hi {}, I'm a filter bot used for adding unlimited custom filter messages in groups. Join @KeralaBots to find how to add me in your group.
 """
 
 HELP_STRINGS = """
-Hey! My name is Mr.Pirate. I am a group management bot, here to help you get around and keep the order in your groups!
-I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
+How to use this bot:
+ - /filters: list all active filters in this chat.
 
-Helpful commands:
-- /start: Starts me! You've probably already used this.
-- /help: Sends this message; I'll tell you more about myself!
-- /donate: Gives you info on how to support me and my creator.
-
-If you have any bugs or questions on how to use me, have a look at my [GROUP](https://t.me/botdouth), or contact the owner - @sangeeth006.
- All commands can be used with the following: / !
+Admin only:
+ - /filter <keyword> <reply message>: add a filter to this chat. The bot will now reply that message whenever 'keyword'is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker. NOTE: all filter keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg: /filter "hey there" How you doin?
+ - /stop <filter keyword>: stop that filter.
 """
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
