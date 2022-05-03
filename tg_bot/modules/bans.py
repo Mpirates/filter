@@ -467,7 +467,7 @@ def runban(bot: Bot, update: Update, args: List[str]):
             message.reply_text("Well damn, I can't unban that user.")
 
 
-__help__ = """
+__hel__ = """
 Some people need to be publicly banned; spammers, annoyances, or just trolls.
 
 This module allows you to do that easily, by exposing some common actions, so everyone will see!
