@@ -148,7 +148,7 @@ if is_module_loaded(FILENAME):
 
     __mod_name__ = "Disable"
 
-    __help__ = """
+    __hep__ = """
  - /cmds: check the current status of disabled commands
 
 *Admin only:*
