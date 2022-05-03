@@ -68,7 +68,7 @@ def export_data(bot: Bot, update: Update):
 
 __mod_name__ = "Backups"
 
-__help__ = """
+__hep__ = """
 *Admin only:*
  - /import: reply to a group butler backup file to import as much as possible, making the transfer super simple! Note \
 that files/photos can't be imported due to telegram restrictions.
