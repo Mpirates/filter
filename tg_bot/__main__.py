@@ -19,13 +19,13 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hi {}, My name is jessy - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
+Hi {}, My name is Mr.Pirate - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 Join my [news channel](https://t.me/FPHDMOVE) to get all the latest move updates.
 
 """
 
 HELP_STRINGS = """
-Hey! My name is jessy. I am a group management bot, here to help you get around and keep the order in your groups!
+Hey! My name is Mr.Pirate. I am a group management bot, here to help you get around and keep the order in your groups!
 I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
 
 Helpful commands:
