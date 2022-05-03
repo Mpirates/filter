@@ -288,7 +288,7 @@ def __chat_settings__(chat_id, user_id):
     return build_lock_message(chat_id)
 
 
-__help__ = """
+__hel__ = """
  - /locktypes: a list of possible locktypes
 
 *Admin only:*
