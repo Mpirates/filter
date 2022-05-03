@@ -146,7 +146,7 @@ def __stats__():
 
 __mod_name__ = "world blacklists"
 
-__help__ = """
+__hep__ = """
 Want to stop people asking stupid questions? or ban anyone saying censored words? Blocklists is the module for you!
 
 From blocking rude words, filenames/extensions, to specific emoji, everything is possible.
