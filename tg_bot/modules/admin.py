@@ -254,7 +254,7 @@ def __chat_settings__(chat_id, user_id):
         dispatcher.bot.get_chat_member(chat_id, user_id).status in ("administrator", "creator"))
 
 
-__help__ = """
+__GMC__ = """
 Make it easy to promote and demote users with the admin module!
 *Admin commands:*
  - /adminlist: list of admins and members in the chat
